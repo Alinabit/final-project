@@ -37,8 +37,6 @@
 @media (max-width:600px) {
     .container {
         max-width: 550px;
-        margin-right: 10px;
-        margin-left: 10px;
         padding: 10px 10px;
         width: 100%;
     }
@@ -48,8 +46,6 @@
 @media (min-width:601px) and (max-width:800px) {
     .container {
         max-width: 800px;
-        margin-right: 10px;
-        margin-left: 10px;
         padding: 10px 10px;
         width: 100%;
     }
@@ -218,12 +214,48 @@
     
 }
 
+@media (max-width:600px) { 
+    .caries {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .caries-text {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}    
+
+@media (min-width:601px) and (max-width:800px) { 
+    .caries {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
 .caries-text {
     font-weight: 400;
     font-size: 24px;
     line-height: 33px;
     color: var(--text-service);
 }
+
+@media (max-width:600px) {
+    .caries-text {
+        font-size: 20px;
+        line-height: 25px;
+        padding-bottom: 30px;
+    }
+
+    .title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 50px;      
+    }
+}    
 
 .caries-text p:first-child {
     margin-bottom: 49px;
@@ -233,6 +265,31 @@
     display: flex;
     justify-content: flex-end;
     width: calc(100%/12*5);
+}
+
+@media (max-width:600px) { 
+    .caries-img img {
+        width: 100%;
+        object-fit: contain;
+    }
+}  
+
+@media (max-width:600px) { 
+    .caries-img {
+        width: 100%;
+    }
+}  
+
+@media (min-width:601px) and (max-width:800px) { 
+    .caries-img {
+        width: 100%;
+    }
+}
+
+@media (min-width:601px) and (max-width:800px) { 
+    .caries-img img {
+    width: 100%;
+    }
 }
 
 .caries-img img {
@@ -247,6 +304,30 @@
     
 }
 
+@media (max-width:600px) { 
+    .caries-price {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+}    
+
+@media (min-width:601px) and (max-width:800px) { 
+    .caries-price {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+}
+
+@media (min-width:601px) and (max-width:800px) { 
+    .caries-price-details {
+        width: 100%;
+    }
+}
+
 .caries-price-details {
     font-weight: var(--font-weight-h);
     font-size: 20px;
@@ -256,6 +337,7 @@
     border-radius: 30px;
     padding: 15px 50px;
     margin: 6px;
+    
 }
 
 .caries-price-details span {
@@ -512,6 +594,12 @@
         width: 95%;
     }
 }    
+
+@media (min-width:601px) and (max-width:800px) { 
+    .contacts {
+        padding-top: 30px;
+    }
+}
 
 @media (min-width:601px) and (max-width:800px) { 
     .contacts p {
