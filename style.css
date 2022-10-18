@@ -183,6 +183,7 @@
     font-size: 18px;
     line-height: 25px;
     text-align: center;
+    margin-top: 22px;
 }
 
 .blue-button:hover {
@@ -226,6 +227,7 @@
 	position: relative;    
 	line-height: 0;
     overflow: hidden;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 @media (max-width:600px) { 
@@ -255,7 +257,7 @@
 	top: 0;      
 	left: 0;   
 	background: transparent;
-	background-image: linear-gradient(to right, rgb(12, 74, 110, 1), rgb(2, 132, 199, 0));
+	background-image: linear-gradient(to right, rgb(12, 74, 110), rgb(2, 132, 199, 0));
 	opacity: 0.6;
     border-radius: 5%;
 }
@@ -392,6 +394,16 @@
 @media (min-width:601px) and (max-width:800px) { 
     .button-right {
        margin-right: 10px;
+    }
+}
+
+.reviews {
+    margin-bottom: 154px;
+} 
+
+@media (max-width:600px) { 
+    .reviews {
+        margin-bottom: 80px;
     }
 }
 
@@ -646,7 +658,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 55px;
     color: var(--text-blue);
     font-weight: 400;
     font-size: 18px;
